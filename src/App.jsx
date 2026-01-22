@@ -5,7 +5,6 @@ import Choice from "./components/Choice";
 import Ending from "./components/Ending";
 import Thanks from "./components/Thanks";
 
-import prolog from "./assets/prolog.mp4";
 import sceneA from "./assets/sceneA.mp4";
 import sceneB from "./assets/sceneB.mp4";
 import scene2 from "./assets/scene2.mp4";
@@ -23,7 +22,7 @@ export default function App() {
       return <Landing onStart={() => setStep("prolog")} />;
 
     case "prolog":
-      return <VideoPlayer src={prolog} onEnd={() => setStep("choice1")} />;
+      return <VideoPlayer src={"https://res.cloudinary.com/dztyjqhyt/video/upload/v1769066043/prolog_c3th9v.mp4"} onEnd={() => setStep("choice1")} />;
 
     case "choice1":
       return (
